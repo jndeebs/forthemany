@@ -1,13 +1,13 @@
-title: Otto Wels
+title: Sadiq Khan
 is-pinned-card: true
 tags: advisor, centrist
-card-image: img/portraits/WelsOtto.jpg
+card-image: img/portraits/sadiqkhan.jpg
 view-if: wels_advisor = 1
 new-page: true
 
-= Otto Wels
+= Sadiq Khan
 
-Wels is the long-time chairman of the <span style="color: #c00000;">**SPD**</span>. He is a gifted organizer and a member of the centrist faction.
+Khan is <span style="color: #c00000;">**Labour**</span>'s candidate for the London Mayoralty.
 
 - @clear_agenda
 - @party_discipline
