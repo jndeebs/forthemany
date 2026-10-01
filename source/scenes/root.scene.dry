@@ -61,7 +61,7 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['left', 'tribune_group', 'blue_labour', 'labour_right', 'true_soft_left', 'social_patriot'];
+Q.factions = ['left', 'tribune_group', 'blue_labour', 'labour_right', 'true_soft_left'];
 // should this be normalized to 100%?
 Q.left_strength = 15;
 Q.left_dissent = 0;
@@ -73,8 +73,6 @@ Q.labour_right_strength = 25;
 Q.labour_right_dissent = 100;
 Q.true_soft_left_strength = 5;
 Q.true_soft_left_dissent = 5;
-Q.social_patriot_strength = 0
-Q.social_patriot_dissent = 0;
 
 // secret events...
 Q.unions_independent = 0;
@@ -252,8 +250,8 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
-Q.parties_graph = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.parties = ['con', 'lab', 'snp', 'ld', 'pc', 'grn', 'ukip', 'other'];
+Q.parties_graph = ['con', 'lab', 'snp', 'ld', 'pc', 'grn', 'ukip', 'other'];
 
 Q.sapd_formed = 0;
 Q.dnf_formed = 0;
@@ -524,19 +522,19 @@ Q.economic_records = [];
 // State of the government
 Q.president = "Hindenburg";
 Q.president_ideology = "Hindenburg";
-// starting chancellor: Wilhelm Marx
-Q.chancellor = "Marx";
-Q.chancellor_party = 'Z';
-Q.spd_in_government = 0;
-Q.spd_in_government_time = 0;
-Q.spd_in_government_total_time = 0;
-Q.spd_in_foreign_time = 0;
-Q.z_in_government = 1;
-Q.ddp_in_government = 0;
-Q.dvp_in_government = 1;
-Q.dnvp_in_government = 1;
-Q.kpd_in_government = 0;
-Q.nsdap_in_government = 0;
+// starting prime minister: David Cameron
+Q.prime_minister = "Marx";
+Q.chancellor_party = 'Con';
+Q.lab_in_government = 0;
+Q.lab_in_government_time = 0;
+Q.lab_in_government_total_time = 0;
+Q.lab_in_foreign_time = 0;
+Q.con_in_government = 1;
+Q.ld_in_government = 0;
+Q.snp_in_government = 0;
+Q.pc_in_government = 0;
+Q.grn_in_government = 0;
+Q.ukip_in_government = 0;
 
 Q.spd_prussia_time = 0;
 
