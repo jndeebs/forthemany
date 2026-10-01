@@ -23,35 +23,35 @@ Use the media to drum up support for the <span style="color: #c00000;">**Labour 
 - @cancel_advisor_action
 
 @guardian
-title: A major Guardian op-ed to bring on board <span style="color: #FFDF00;">Centrist Dads</span>.
-subtitle: This might upset ideological purists, but it may bring in one-off donations and win over some of the PMC.
+title: Op-ed in the Guardian
+subtitle: This might upset ideological purists, but it may bring in one-off donations and win over some <span style="color: #E3B710;">Centrist Dads</span>.
 on-arrival: resources += 1; commercialized_media += 1; new_middle_spd += 4*(1 - dissent); old_middle_spd += 3*(1-dissent); left_dissent += 10; labor_dissent += 10; socialism += 2*(1 - dissent); pro_republic += 1*(1-dissent); nationalism -= 1*(1 - dissent);
 
-Our commercialized newspapers are able to bring in more funds. However, the left and labor factions express their displeasure.
+The piece was a success, increasing middle class support and bringing in some donations.
 
 @bbc
-title: A One Show interview to put us in every living room in the country.
-subtitle: Talking alotments with Matt Baker.
+title: Interview on the One Show
+subtitle: Talk alotments with Matt Baker to put us in every living room in Britain.
 on-arrival: campaign_media += 1; workers_spd += 4*(1 - dissent); unemployed_spd += 2*(1-dissent); new_middle_spd += 4*(1-dissent) if new_middle_conscious == 1; rural_spd += 2*(1-dissent) if rural_conscious == 1
 
-Our campaign media is mostly reaching the workers [? if rural_conscious == 1: and peasants ?] who are already saturated with <span style="color: #c00000;">Socialist</span> propaganda, but it must be doing *something*, or at least that is what we hope.
+This mildly improved perceptions of you and <span style="color: #c00000;">**Labour**</span> amongst pensioners.
 
 @labourlist
-title: Get Labourlist to send a puff piece to activists' inboxes, to quell dissent on the right of the paty.
-subtitle: There will be space for all factions to air their views.
+title: Labourlist puff piece
+subtitle: Use the party's biggest online newsite to quell dissent on the right of the party.
 on-arrival: labor_dissent -= 6; center_dissent -= 6; reformist_dissent -= 6; neorevisionist_dissent -= 6
 
 The Labour Right, Blue Labour, Tribune Group and Soft Left factions are appeased.
 
 @socialmedia
-title: Social Media
-subtitle: Build up social media to reach untapped demographics, and build up party membership. This will increase income from annual membership subs. -2 resources
+title: Building up Social Media
+subtitle: Reach untapped demographics, and build up party membership.  -2 resources
 choose-if: resources >= 2
 unavailable-subtitle: Not enough resources.
 view-if: radio = 0
 on-arrival: dues += 2; radio += 1; resources -= 2; unemployed_spd += 4*(1 - dissent); workers_spd += 2*(1 - dissent); labor_dissent += 5; socialism += 3*(1 - dissent);  nationalism -= 1*(1 - dissent); nationalism -= 2*(1 - dissent) if pacifism > 1; pro_republic += 2*(1-dissent)
 
-There is a rush of enthusiasm for the <span style="color: #c00000;">**Labour Party**</span> online, bringing in younger voters and new members.
+There is a rush of enthusiasm for the <span style="color: #c00000;">**Labour Party**</span> online, bringing in younger voters and new members. Income from annual membership subs will increase.
 
 @socialmedia_2
 title: Continue building up social media
