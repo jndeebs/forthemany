@@ -6,7 +6,7 @@ go-to: post_event if started = 1; start_menu if started = 0
 new-page: true
 go-to: start_menu_2
 
-= Social Democracy: An Alternate History
+= For the Many, Not the Few: An Alternate History
 
 @start_menu_2
 
@@ -61,18 +61,18 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['left', 'center', 'labor', 'reformist', 'neorevisionist', 'social_patriot'];
+Q.factions = ['left', 'tribune_group', 'blue_labour', 'labour_right', 'true_soft_left', 'social_patriot'];
 // should this be normalized to 100%?
 Q.left_strength = 15;
-Q.left_dissent = 20;
-Q.center_strength = 30;
-Q.center_dissent = 0;
-Q.labor_strength = 25;
-Q.labor_dissent = 5;
-Q.reformist_strength = 25;
-Q.reformist_dissent = 5;
-Q.neorevisionist_strength = 5;
-Q.neorevisionist_dissent = 10;
+Q.left_dissent = 0;
+Q.tribune_group_strength = 30;
+Q.tribune_group_dissent = 50;
+Q.blue_labour_strength = 10;
+Q.labor_dissent = 20;
+Q.labour_right_strength = 25;
+Q.labour_right_dissent = 100;
+Q.true_soft_left_strength = 5;
+Q.true_soft_left_dissent = 5;
 Q.social_patriot_strength = 0
 Q.social_patriot_dissent = 0;
 
@@ -83,7 +83,7 @@ Q.left_split = 0;
 Q.reformists_resigned = 0;
 
 // have we discovered neorevisionism?
-Q.neorevisionism = 0;
+Q.neorevisionism = 1;
 
 Q.social_patriot = 0;
 
@@ -325,37 +325,34 @@ Q.rural_spd_old = 8;
 Q.unemployed_spd_old = 25;
 Q.catholics_spd_old = 20;
 
-// Current Reichstag composition
-// % of Reichstag in Jan 1928
+// Current House of Commons composition
+// % of House of Commons in Sept 2015
 // source: wikipedia
 // note: the Z figures also include the BVP (Bavarian people's party)
 // since they were ideologically similar, but they were separate parties.
 // They did not have a CDU/CSU-style relationship.
-Q.spd_r = 26.5;
-Q.kpd_r = 9.1;
-Q.z_r = 17.8;
-Q.ddp_r = 6.5;
-Q.dvp_r = 10.3;
-Q.dnvp_r = 20.9;
-Q.nsdap_r = 3;
-Q.other_r = 5.9;
-Q.bvp_r = 3.9;
-Q.wp_r = 2.4;
-Q.cnblp_r = 1.7;
-Q.true_other_r = 1.8;
+Q.con_r = 50.8;
+Q.lab_r = 35.7;
+Q.snp_r = 8.6;
+Q.ld_r = 1.2;
+Q.pc_r = 0.5;
+Q.grn_r = 0.2;
+Q.ukip_r = 0.2;
+Q.dup_r = 1.2;
+Q.true_other_r = 1.6;
 Q.reichstag_size = 4.93;
 Q.landtag_size = 4.5;
 
 // diff from prev
-Q.old_spd_r = 26.5;
-Q.old_kpd_r = 9.1;
-Q.old_z_r = 13.9;
-Q.old_ddp_r = 6.5;
-Q.old_dvp_r = 10.3;
-Q.old_dnvp_r = 20.9;
-Q.old_nsdap_r = 3;
-Q.old_other_r = 5.9;
-Q.old_bvp_r = 3.9;
+Q.old_con_r = 47.1;
+Q.old_lab_r = 39.7;
+Q.old_snp_r = 0.9;
+Q.old_ld_r = 8.8;
+Q.old_pc_r = 0.5;
+Q.old_grn_r = 0.2;
+Q.old_ukip_r = 0;
+Q.old_dup_r = 1.2;
+Q.old_other_r = 1.6;
 
 // old election votes
 Q.previous_spd_last_election_votes = 26;
