@@ -10,7 +10,8 @@ new-page: true
 Milne is a former columnist and associate editor at the Guardian. He is on the 'hard left' of the <span style="color: #c00000;">**Labour Party**</span>, highly critical of the European Union and NATO.
 
 - @media_strategy
-- @kpd_cooperation
+- @against_NATO
+- @support_lexit
 - @root: Return to main
 
 @media_strategy
@@ -19,14 +20,19 @@ subtitle: As our Director of Strategy and Communications, Milne can direct out m
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer = 0
 on-arrival: advisor_action_timer = 6; left_strength += 6; left_dissent -= 8; reformist_dissent += 2
+go-to: media
 
-We have increased the strength of the left faction with the <span style="color: #c00000;">**SPD**</span>.
-
-@kpd_cooperation
-title: Cooperation with the <span style="color: #700000;">**KPD**</span>
-subtitle: Push the party to be more friendly towards the <span style="color: #700000;">**KPD**</span>.
+@against_NATO
+title: Against NATO
+subtitle: Milne can push the party to adopt an anti-imperialist foreign policy.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer = 0
 on-arrival: advisor_action_timer = 6; left_strength += 5; kpd_relation += 4*(1-dissent); reformist_dissent += 2; communist_coalition += 1 if kpd_cooperation_seen <= 1; kpd_cooperation_seen += 1
 
 Through his work, Rosenfeld has defended individual <span style="color: #700000;">**KPD**</span> members; this should make some connections possible.
+
+@support_lexit
+title: Campaign for Lexit
+subtitle: Build support for a pro-'Lexit' policy within the party.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer = 0 and referendum_date_seen ==1
