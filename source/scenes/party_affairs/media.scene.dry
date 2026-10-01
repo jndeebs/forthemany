@@ -9,7 +9,7 @@ card-image: img/media.jpg
 
 = Media
 
-The <span style="color: #c00000;">**SPD**</span> runs a veritable media empire, with many newspapers throughout every German city and region. We could use the media for various purposes...
+Use the media to drum up support for the <span style="color: #c00000;">**Labour Party**</span>, quell internal disuptes, or build up the party's resources over the medium-term. 
 
 - @guardian
 - @bbc
@@ -41,17 +41,17 @@ title: Get Labourlist to send a puff piece to activists' inboxes, to quell disse
 subtitle: There will be space for all factions to air their views.
 on-arrival: labor_dissent -= 6; center_dissent -= 6; reformist_dissent -= 6; neorevisionist_dissent -= 6
 
-The Labour Right, Blue Labour, Tribune Group and 'True Soft Left' factions are appeased.
+The Labour Right, Blue Labour, Tribune Group and Soft Left factions are appeased.
 
 @socialmedia
 title: Social Media
-subtitle: -2 resources
+subtitle: Build up social media to reach untapped demographics, and build up party membership. This will increase income from annual membership subs. -2 resources
 choose-if: resources >= 2
 unavailable-subtitle: Not enough resources.
 view-if: radio = 0
-on-arrival: radio += 1; resources -= 2; unemployed_spd += 4*(1 - dissent); workers_spd += 2*(1 - dissent); labor_dissent += 5; socialism += 3*(1 - dissent);  nationalism -= 1*(1 - dissent); nationalism -= 2*(1 - dissent) if pacifism > 1; pro_republic += 2*(1-dissent)
+on-arrival: dues += 2; radio += 1; resources -= 2; unemployed_spd += 4*(1 - dissent); workers_spd += 2*(1 - dissent); labor_dissent += 5; socialism += 3*(1 - dissent);  nationalism -= 1*(1 - dissent); nationalism -= 2*(1 - dissent) if pacifism > 1; pro_republic += 2*(1-dissent)
 
-Build up social media to reach untapped demographics, and build up party membership. This will increase income from annual membership subs.
+There is a rush of enthusiasm for the <span style="color: #c00000;">**Labour Party**</span> online, bringing in younger voters and new members.
 
 @socialmedia_2
 title: Continue building up social media
@@ -59,24 +59,24 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 view-if: radio > 0 and radio <= 3
-on-arrival: radio += 1; resources -= 1; new_middle_spd += 5*(1 - dissent); old_middle_spd += 3*(1 - dissent); workers_spd += 3*(1 - dissent); socialism += 3*(1 - dissent); nationalism -= 1*(1 - dissent); nationalism -= 2*(1 - dissent)*(pacifism-2) if pacifism > 2; pro_republic += 2*(1-dissent)
+on-arrival: dues += 1; radio += 1; resources -= 1; new_middle_spd += 5*(1 - dissent); old_middle_spd += 3*(1 - dissent); workers_spd += 3*(1 - dissent); socialism += 3*(1 - dissent); nationalism -= 1*(1 - dissent); nationalism -= 2*(1 - dissent)*(pacifism-2) if pacifism > 2; pro_republic += 2*(1-dissent)
 
-Our new radio network has a mix of popular and political programming, and is proving a success.
+Our social media and new 'left media' continues to steadily build support and bring in members from untapped demographics.
 
 @socialmedia_3
 title: Continue building up social media
-subtitle: It is now financially self-sufficient, and does not require any more resources.
+subtitle: -1 resources
 view-if: radio > 3 and radio <= 5 and year <= 1931
-on-arrival: radio += 1; new_middle_spd += 5*(1 - dissent); old_middle_spd += 4*(1 - dissent); workers_spd += 4*(1 - dissent); rural_spd += 3*(1 - dissent); unemployed_spd += 2*(1-dissent); socialism += 3*(1 - dissent); nationalism -= 1*(1 - dissent); nationalism -= 2*(1 - dissent)*(pacifism-2) if pacifism > 2; pro_republic += 2*(1-dissent)
+on-arrival: dues += 1; radio += 1; new_middle_spd += 5*(1 - dissent); old_middle_spd += 4*(1 - dissent); workers_spd += 4*(1 - dissent); rural_spd += 3*(1 - dissent); unemployed_spd += 2*(1-dissent); socialism += 3*(1 - dissent); nationalism -= 1*(1 - dissent); nationalism -= 2*(1 - dissent)*(pacifism-2) if pacifism > 2; pro_republic += 2*(1-dissent)
 
-Our radio network has become a successful tool for spreading our message.
+You continue to build support, and some new members jon. However, you are reaching the limit of new people who can be brough into the movement online.
 
 @socialmedia_4
 title: We should keep on supporting our radio network.
-subtitle: As radio becomes more common, the novelty is beginning to wear off, and radio is becoming saturated in society. -1 resources
+subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 view-if: radio > 3 and (radio >= 6 or year >= 1932) and radio <= 9
 on-arrival: radio += 1; resources -= 1; new_middle_spd += 3*(1 - dissent); old_middle_spd += 2*(1 - dissent); workers_spd += 3*(1 - dissent); rural_spd += 2*(1 - dissent); unemployed_spd += 2*(1-dissent); socialism += 2*(1 - dissent); nationalism -= 1*(1 - dissent); nationalism -= 2*(1 - dissent)*(pacifism-2) if pacifism > 2; pro_republic += 2*(1-dissent)
 
-We are continuing to invest in our radio stations. Both commercial and political radio are becoming more prevalent, making it harder to spread our message amidst the competition.
+You build some further support, but you have reached the limit of new members who can be brough into the movement online.
