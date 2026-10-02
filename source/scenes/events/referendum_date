@@ -1,0 +1,12 @@
+title: REFERENDUM DATE ANNOUNCED
+subtitle: It's game on.
+on-arrival: referendum_date_seen = 1
+face-image: img/cameronreferendum.jpg
+tags: event
+view-if: year = 1929 and month = 1
+priority: 2
+max-visits: 1
+
+= Referendum date
+
+The Prime Minister has announced an in/out referendum on EU membership will be held on 23rd June 2016. How will you choose to campaign...?
