@@ -24,8 +24,8 @@ Use the media to drum up support for the <span style="color: #c00000;">**Labour 
 
 @guardian
 title: Op-ed in the Guardian
-subtitle: This might upset ideological purists, but it may bring in one-off donations and win over some <span style="color: #E3B710;">Centrist Dads</span>.
-on-arrival: resources += 1; commercialized_media += 1; new_middle_spd += 4*(1 - dissent); old_middle_spd += 3*(1-dissent); left_dissent += 10; labor_dissent += 10; socialism += 2*(1 - dissent); pro_republic += 1*(1-dissent); nationalism -= 1*(1 - dissent);
+subtitle: This might upset ideological purists, but it may bring in one-off donations and win over some <span style="color: #E0B60D;">Centrist Dads</span>.
+on-arrival: resources += 1; commercialized_media += 1; new_middle_spd += 4*(1 - dissent); old_middle_spd += 3*(1-dissent); left_dissent += 10; labor_dissent += 10; socialism += 2*(1 - dissent); pro_republic += 1*(1-dissent); nationalism -= 1*(1 - dissent)
 
 The piece was a success, increasing middle class support and bringing in some donations.
 
