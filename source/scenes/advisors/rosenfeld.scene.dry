@@ -19,7 +19,8 @@ title: Media Strategy
 subtitle: As our Director of Strategy and Communications, Milne can direct out media strategy.
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer = 0
-on-arrival: go-to: Media
+on-arrival: advisor_action_timer = 6
+go-to: media
 
 @against_NATO
 title: Against NATO
